@@ -6,17 +6,17 @@ from .forms import ContactForm
 
 #our views.
 def index(request):
-	return render(request, 'blog/index.html', {})
+	return render(request, 'index.html', {})
 def events(request):
-	return render(request, 'blog/events.html', {})
+	return render(request, 'events.html', {})
 def contact(request):
-	return render(request, 'blog/contact.html', {})
+	return render(request, 'contact.html', {})
 def post1(request):
-	return render(request, 'blog/post1.html', {})
+	return render(request, 'post1.html', {})
 def post2(request):
-	return render(request, 'blog/post2.html', {})
+	return render(request, 'post2.html', {})
 def post3(request):
-	return render(request, 'blog/post3.html', {})
+	return render(request, 'post3.html', {})
 
 def emailView(request):
 	if request.method == 'GET':
